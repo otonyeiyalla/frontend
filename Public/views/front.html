@@ -1,0 +1,53 @@
+
+<body  ng-controller="frontendController">
+
+<div class="bigFont">
+   <p>Stay up to date with ecommerce trends<br>with Shopify's newsletter<br><font color="#7AB55C">__</font></p>
+</div>
+
+<div>
+<form >
+<fieldset >
+
+
+
+<div ng-show="sub" >
+   <p>Subscribe for free marketing tips</p>
+   <table>
+      <tr>
+         <td class="email-box">
+            <input type = "email" ng-model="email" name = "email" class="email-bar" required placeholder = " Email Address">
+         </td>
+         <td>
+	    <input list="browsers" name="interest" class="other-bar" placeholder=" Interested in...">
+            <datalist id="browsers">
+               <option value="Marketing">Marketing</option>
+            </datalist>
+	    </input>
+         </td>
+      </tr>
+	
+      
+   </table>
+   {{otext}}
+   
+   <p class="try">
+       <button type="submit" class ="button-format" ng-click="myFunction()" >{{text}}</button> &nbsp;
+   </p>
+</div>
+
+
+</fieldset>
+
+<div class="lastFont" ng-show="Thanks">
+	<p><b>Thanks for subscribing</b></p>
+	<p >You'll start receiving free tips and resources soon.</p>
+</div>
+
+
+</form>
+
+</div>
+
+
+</body>
